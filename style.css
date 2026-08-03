@@ -163,6 +163,93 @@ a {
   opacity: 0.55;
 }
 
+/* about panel */
+
+.about-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: var(--diamond-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 320ms ease, visibility 320ms ease;
+  overflow-y: auto;
+}
+
+.about-panel.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.about-panel-inner {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 92px 32px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-copy {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 42px;
+}
+
+.about-copy p {
+  margin: 0;
+  color: #f3eee7;
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-wrap: pretty;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 100px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about-back {
+  border: 0;
+  background: transparent;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-back-diamond {
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  display: block;
+  transform: rotate(45deg);
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.about-back:hover .about-back-diamond,
+.about-back:focus-visible .about-back-diamond {
+  opacity: 0.78;
+  transform: rotate(45deg) scale(0.94);
+}
+
 /* shared section system */
 
 .project-section {
@@ -644,6 +731,32 @@ a {
 
   .landing.open .right-diamond {
     transform: translate(calc(-50% + min(36vw, 170px)), -50%) rotate(45deg);
+  }
+
+  .about-panel-inner {
+    max-width: 100%;
+    padding: 64px 20px 40px;
+  }
+
+  .about-copy {
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .about-copy p {
+    font-family: var(--title-font);
+    font-size: 15px;
+    line-height: 1.16;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .about-back-diamond {
+    width: 18px;
+    height: 18px;
   }
 
   .project-section {

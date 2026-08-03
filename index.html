@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akankshya Padhi</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -24,290 +25,222 @@
             <a href="#scraps">Scraps on the Way Home</a>
             <a href="#distilled">Distilled / Economic and Political Weekly</a>
             <a href="#ocean">The Ocean has Begun Misprinting the Seashells</a>
-            <a href="#about">About me</a>
+            <a href="#about" id="aboutTrigger">About me</a>
             <a href="#poster">Posters I have designed for dancers</a>
             <a href="#fun">stuff for fun</a>
-
           </span>
         </span>
       </span>
     </button>
   </header>
 
+  <section class="about-panel" id="aboutPanel" aria-hidden="true">
+    <div class="about-panel-inner">
+      <div class="about-copy">
+        <p>
+          Writing about oneself is harder than imagined, but if there’s one thing I’d like to share, it’s that I enjoy designing visual narratives, creating meaningful work, and learning along the way. What I value most in my practice is new knowledge, instinctive surprises, and endless curiosity. I completed my Bachelor’s in Multimedia and Mass Communication at Indraprastha College for Women, University of Delhi, in 2020, where I also studied sociology for four semesters as part of my degree. In 2025, I moved to London to pursue an MA in Design for Visual Communication at the London College of Communication. Alongside my work as a visual communication designer, I have continued to practise and perform Odissi dance. I am quite passionate about music and sculpture, neither of which I practise, but I think the contrast between their rigidity and fluidity continually fascinates me.
+        </p>
+      </div>
+
+      <figure class="about-image">
+        <img
+          src="images/a dancing tree on film.png"
+          alt="Black and white landscape photograph"
+          width="1200"
+          height="800"
+          loading="lazy"
+        />
+      </figure>
+
+      <button class="about-back" id="aboutBack" aria-label="Back to landing page">
+        <span class="about-back-diamond" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
   <main id="content">
     <section class="masses-section project-section" id="missing-masses">
-  <div class="project-head masses-head">
-    <div class="diamond-group" aria-hidden="true">
-      <span class="diamond"></span>
-    </div>
-    <h2>The Missing Masses of a Design School</h2>
-  </div>
+      <div class="project-head masses-head">
+        <div class="diamond-group" aria-hidden="true">
+          <span class="diamond"></span>
+        </div>
+        <h2>The Missing Masses of a Design School</h2>
+      </div>
 
-  <div class="masses-main-image">
-    <img
-      src="images/missingmasses_1.png"
-      alt="Main image for The Missing Masses of a Design School"
-      width="1400"
-      height="900"
-      fetchpriority="high"
-    />
-  </div>
-
-  <div class="masses-text">
-    <p>
-      Replace this with your project text. Keep this as one compact paragraph block, similar to the layout in your design.
-    </p>
-  </div>
-
-  <div class="masses-secondary-image">
-    <img
-      src="images/missingmasses_2.png"
-      alt="Secondary publication image for The Missing Masses of a Design School"
-      width="700"
-      height="1100"
-      loading="lazy"
-    />
-  </div>
-</section>
-
-   <section class="scraps-section project-section" id="scraps">
-  <div class="project-head scraps-head">
-    <div class="diamond-group" aria-hidden="true">
-      <span class="diamond"></span>
-      <span class="diamond"></span>
-    </div>
-    <h2>Scraps on the Way Home</h2>
-  </div>
-
-  <div class="scraps-intro">
-    <img
-      src="images/scrapsintro.gif"
-      alt="Printed cards from Scraps on the Way Home arranged on a dark surface"
-      width="1200"
-      height="800"
-      fetchpriority="high"
-    />
-    <p>
-      Replace this with your intro text for the project. Keep it short and precise.
-    </p>
-  </div>
-
-  <div class="scraps-grid-two">
-    <figure class="scraps-figure">
-      <img
-        src="images/scrapsprint_1.png"
-        alt="Blue textile or material image from Scraps on the Way Home"
-        width="900"
-        height="1200"
-        loading="lazy"
-      />
-    </figure>
-
-    <figure class="scraps-figure">
-      <img
-        src="images/scrapsprint_2.png"
-        alt="Blue textile or material image from Scraps on the Way Home"
-        width="900"
-        height="1200"
-        loading="lazy"
-      />
-    </figure>
-  </div>
-
-  <div class="scraps-text-object-row">
-    <div class="scraps-text-block">
-      <p>
-        Replace this with text. This column can describe process, context, or material thinking.
-      </p>
-    </div>
-
-    <figure class="scraps-object">
-      <img
-        src="images/apronprojection.gif"
-        alt="Central black garment or hanging object from Scraps on the Way Home"
-        width="500"
-        height="900"
-        loading="lazy"
-      />
-    </figure>
-
-    <div class="scraps-text-block">
-      <p>
-        Replace this with text. Keep both text blocks similar in length so the composition stays balanced.
-      </p>
-    </div>
-  </div>
-
-  <div class="scraps-grid-two scraps-grid-repeat">
-    <figure class="scraps-figure">
-      <img
-        src="images/scrapsprint_6.png"
-        alt="Blue textile or material image from Scraps on the Way Home"
-        width="900"
-        height="1200"
-        loading="lazy"
-      />
-    </figure>
-
-    <figure class="scraps-figure">
-      <img
-        src="images/scrapsprint_8.png"
-        alt="Blue textile or material image from Scraps on the Way Home"
-        width="900"
-        height="1200"
-        loading="lazy"
-      />
-    </figure>
-  </div>
-
-  <figure class="scraps-featured">
-    <img
-      src="images/scrapspublication.png"
-      alt="Publication spread for Scraps on the Way Home shown at an angle"
-      width="1600"
-      height="1200"
-      loading="lazy"
-    />
-  </figure>
-
-  <div class="scraps-featured-text">
-    <p>
-      Replace this with text about the publication, installation, or final translation of the project.
-    </p>
-  </div>
-
-  <figure class="scraps-installation">
-    <img
-      src="images/scraps_showcasefootage.gif"
-      alt="Installation documentation for Scraps on the Way Home"
-      width="1400"
-      height="900"
-      loading="lazy"
-    />
-  </figure>
-</section>
-
-   <section class="distilled-section project-section" id="distilled">
-  <div class="project-head distilled-head">
-    <div class="diamond-group" aria-hidden="true">
-      <span class="diamond"></span>
-      <span class="diamond"></span>
-      <span class="diamond"></span>
-    </div>
-    <h2>Distilled / Economic and Political Weekly</h2>
-  </div>
-
-  <div class="distilled-intro">
-    <p>
-      As a Multimedia Content Visualiser at Economic and Political Weekly (EPW), I have been dedicated to making academic knowledge and information more accessible to a wider audience. One of the key initiatives I have been involved in is EPW Engage, which aims to bridge the gap between complex academic ideas and everyday understanding.
-    </p>
-  </div>
-
-  <div class="distilled-list">
-    <article class="distilled-item">
-      <div class="distilled-visual">
-        <p class="distilled-meta">09</p>
-        <h3>
-          <a href="https://example.com/project-1" target="_blank" rel="noopener noreferrer">
-            A woman in wolf’s clothing
-          </a>
-        </h3>
+      <div class="masses-main-image">
         <img
-          src="images/FI_loiteringdt_Akankshya_2023.png"
-          alt="Illustration for A woman in wolf's clothing"
-          width="900"
-          height="520"
+          src="images/missingmasses_1.png"
+          alt="Main image for The Missing Masses of a Design School"
+          width="1400"
+          height="900"
+          fetchpriority="high"
+        />
+      </div>
+
+      <div class="masses-text">
+        <p>Replace this with your project text. Keep this as one compact paragraph block, similar to the layout in your design.</p>
+      </div>
+
+      <div class="masses-secondary-image">
+        <img
+          src="images/missingmasses_2.png"
+          alt="Secondary publication image for The Missing Masses of a Design School"
+          width="700"
+          height="1100"
           loading="lazy"
         />
       </div>
-      <div class="distilled-copy">
-        <p>
-          This feature examines the role of caste in shaping the wage gap narrative, focusing on the dynamics with caste group horizontal. While the nature of employment and wage is associated with education level, the same may not always help in getting a better-paying job. Therefore, the project visualises the wage gap across various types of occupations per caste group. This infographic is based on the article Caste and Wage Inequalities in India by Praveen Kumar and Indervir Singh published in EPW.
-        </p>
-      </div>
-    </article>
+    </section>
 
-    <article class="distilled-item">
-      <div class="distilled-visual">
-        <p class="distilled-meta">15</p>
-        <h3>
-          <a href="https://example.com/project-2" target="_blank" rel="noopener noreferrer">
-            Does Caste Matter for Your Wages?
-          </a>
-        </h3>
+    <section class="scraps-section project-section" id="scraps">
+      <div class="project-head scraps-head">
+        <div class="diamond-group" aria-hidden="true">
+          <span class="diamond"></span>
+          <span class="diamond"></span>
+        </div>
+        <h2>Scraps on the Way Home</h2>
+      </div>
+
+      <div class="scraps-intro">
         <img
-          src="images/fi_casteandwage_ak030124.png"
-          alt="Illustration for Does Caste Matter for Your Wages?"
-          width="900"
-          height="520"
-          loading="lazy"
+          src="images/scrapsintro.gif"
+          alt="Printed cards from Scraps on the Way Home arranged on a dark surface"
+          width="1200"
+          height="800"
+          fetchpriority="high"
         />
+        <p>Replace this with your intro text for the project. Keep it short and precise.</p>
       </div>
-      <div class="distilled-copy">
+
+      <div class="scraps-grid-two">
+        <figure class="scraps-figure">
+          <img src="images/scrapsprint_1.png" alt="Blue textile or material image from Scraps on the Way Home" width="900" height="1200" loading="lazy" />
+        </figure>
+        <figure class="scraps-figure">
+          <img src="images/scrapsprint_2.png" alt="Blue textile or material image from Scraps on the Way Home" width="900" height="1200" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="scraps-text-object-row">
+        <div class="scraps-text-block">
+          <p>Replace this with text. This column can describe process, context, or material thinking.</p>
+        </div>
+
+        <figure class="scraps-object">
+          <img src="images/apronprojection.gif" alt="Central black garment or hanging object from Scraps on the Way Home" width="500" height="900" loading="lazy" />
+        </figure>
+
+        <div class="scraps-text-block">
+          <p>Replace this with text. Keep both text blocks similar in length so the composition stays balanced.</p>
+        </div>
+      </div>
+
+      <div class="scraps-grid-two scraps-grid-repeat">
+        <figure class="scraps-figure">
+          <img src="images/scrapsprint_6.png" alt="Blue textile or material image from Scraps on the Way Home" width="900" height="1200" loading="lazy" />
+        </figure>
+        <figure class="scraps-figure">
+          <img src="images/scrapsprint_8.png" alt="Blue textile or material image from Scraps on the Way Home" width="900" height="1200" loading="lazy" />
+        </figure>
+      </div>
+
+      <figure class="scraps-featured">
+        <img src="images/scrapspublication.png" alt="Publication spread for Scraps on the Way Home shown at an angle" width="1600" height="1200" loading="lazy" />
+      </figure>
+
+      <div class="scraps-featured-text">
+        <p>Replace this with text about the publication, installation, or final translation of the project.</p>
+      </div>
+
+      <figure class="scraps-installation">
+        <img src="images/scraps_showcasefootage.gif" alt="Installation documentation for Scraps on the Way Home" width="1400" height="900" loading="lazy" />
+      </figure>
+    </section>
+
+    <section class="distilled-section project-section" id="distilled">
+      <div class="project-head distilled-head">
+        <div class="diamond-group" aria-hidden="true">
+          <span class="diamond"></span>
+          <span class="diamond"></span>
+          <span class="diamond"></span>
+        </div>
+        <h2>Distilled / Economic and Political Weekly</h2>
+      </div>
+
+      <div class="distilled-intro">
         <p>
-          This feature examines the role of caste in shaping the wage gap narrative, focusing on the dynamics with caste group horizontal. While the nature of employment and wage is associated with education level, the same may not always help in getting a better-paying job. Therefore, the project visualises the wage gap across various types of occupations per caste group. This infographic is based on the article Caste and Wage Inequalities in India by Praveen Kumar and Indervir Singh published in EPW.
+          As a Multimedia Content Visualiser at Economic and Political Weekly (EPW), I have been dedicated to making academic knowledge and information more accessible to a wider audience. One of the key initiatives I have been involved in is EPW Engage, which aims to bridge the gap between complex academic ideas and everyday understanding.
         </p>
       </div>
-    </article>
-  </div>
 
-  <figure class="distilled-logo">
-    <img
-      src="images/enguage_small.png"
-      alt="EPW Engage logo"
-      width="240"
-      height="90"
-      loading="lazy"
-    />
-  </figure>
-</section>
+      <div class="distilled-list">
+        <article class="distilled-item">
+          <div class="distilled-visual">
+            <p class="distilled-meta">09</p>
+            <h3><a href="https://example.com/project-1" target="_blank" rel="noopener noreferrer">A woman in wolf’s clothing</a></h3>
+            <img src="images/FI_loiteringdt_Akankshya_2023.png" alt="Illustration for A woman in wolf’s clothing" width="900" height="520" loading="lazy" />
+          </div>
+          <div class="distilled-copy">
+            <p>
+              This feature examines the role of caste in shaping the wage gap narrative, focusing on the dynamics with caste group horizontal. While the nature of employment and wage is associated with education level, the same may not always help in getting a better-paying job. Therefore, the project visualises the wage gap across various types of occupations per caste group. This infographic is based on the article “Caste and Wage Inequalities in India” by Praveen Kumar and Indervir Singh published in EPW.
+            </p>
+          </div>
+        </article>
 
-   <section class="ocean-section project-section" id="ocean">
-  <div class="project-head ocean-head">
-    <div class="diamond-group" aria-hidden="true">
-      <span class="diamond"></span>
-      <span class="diamond"></span>
-      <span class="diamond"></span>
-      <span class="diamond"></span>
-    </div>
-    <h2>The Ocean has Begun Misprinting the Seashells</h2>
-  </div>
+        <article class="distilled-item">
+          <div class="distilled-visual">
+            <p class="distilled-meta">15</p>
+            <h3><a href="https://example.com/project-2" target="_blank" rel="noopener noreferrer">Does Caste Matter for Your Wages?</a></h3>
+            <img src="images/fi_casteandwage_ak030124.png" alt="Illustration for Does Caste Matter for Your Wages?" width="900" height="520" loading="lazy" />
+          </div>
+          <div class="distilled-copy">
+            <p>
+              This feature examines the role of caste in shaping the wage gap narrative, focusing on the dynamics with caste group horizontal. While the nature of employment and wage is associated with education level, the same may not always help in getting a better-paying job. Therefore, the project visualises the wage gap across various types of occupations per caste group. This infographic is based on the article “Caste and Wage Inequalities in India” by Praveen Kumar and Indervir Singh published in EPW.
+            </p>
+          </div>
+        </article>
 
-  <figure class="ocean-top-strip">
-    <img
-      src="images/shell_2021.png"
-      alt="Panel-based image sequence for The Ocean has Begun Misprinting the Seashells"
-      width="1400"
-      height="720"
-      fetchpriority="high"
-    />
-  </figure>
+        <figure class="distilled-logo">
+          <img src="images/engauge_small.png" alt="EPW Engage logo" width="240" height="90" loading="lazy" />
+        </figure>
+      </div>
+    </section>
 
-  <div class="ocean-text">
-    <p>
-      Replace this with your project text. Keep it as one compact paragraph block like the layout in your mockup.
-    </p>
-  </div>
+    <section class="ocean-section project-section" id="ocean">
+      <div class="project-head ocean-head">
+        <div class="diamond-group" aria-hidden="true">
+          <span class="diamond"></span>
+          <span class="diamond"></span>
+          <span class="diamond"></span>
+          <span class="diamond"></span>
+        </div>
+        <h2>The Ocean has Begun Misprinting the Seashells</h2>
+      </div>
 
-  <figure class="ocean-main-image">
-    <div class="ocean-artwork">
-      
-      <img
-        src="images/oceanshells.gif"
-        alt="Orange shell image for The Ocean has Begun Misprinting the Seashells"
-        width="1000"
-        height="1000"
-        loading="lazy"
-      />
-    </div>
-  </figure>
+      <figure class="ocean-top-strip">
+        <img
+          src="images/shell_2021.png"
+          alt="Panel-based image sequence for The Ocean has Begun Misprinting the Seashells"
+          width="1400"
+          height="720"
+          fetchpriority="high"
+        />
+      </figure>
 
-  <p class="ocean-link">
-    <a href="images/ocean-infographic.jpg" target="_blank" rel="noopener noreferrer">
-      See the infographic here
-    </a>
-  </p>
-</section>
+      <div class="ocean-text">
+        <p>Replace this with your project text. Keep it as one compact paragraph block like the layout in your mockup.</p>
+      </div>
+
+      <figure class="ocean-main-image">
+        <div class="ocean-artwork">
+          <img src="images/oceanshells.gif" alt="Orange shell image for The Ocean has Begun Misprinting the Seashells" width="1000" height="1000" loading="lazy" />
+        </div>
+      </figure>
+
+      <p class="ocean-link">
+        <a href="images/ocean-infographic.jpg" target="_blank" rel="noopener noreferrer">See the infographic here</a>
+      </p>
+    </section>
   </main>
 
   <script src="script.js"></script>
