@@ -770,8 +770,6 @@ a {
 
 /* fun */
 
-/* fun */
-
 .fun-panel {
   position: fixed;
   inset: 0;
@@ -792,14 +790,14 @@ a {
 
 .fun-panel-inner {
   width: 100%;
-  max-width: 860px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 64px 24px 72px;
 }
 
 .fun-block {
   width: 100%;
-  margin-bottom: 88px;
+  margin-bottom: 200px;
 }
 
 .fun-label,
@@ -809,16 +807,17 @@ a {
   font-family: var(--body-font);
   font-weight: 400;
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .fun-label {
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.2;
   margin-bottom: 2px;
 }
 
 .fun-title {
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.2;
   margin-bottom: 18px;
 }
@@ -827,25 +826,28 @@ a {
   color: #111111;
   font-family: var(--body-font);
   font-weight: 400;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.35;
   letter-spacing: 0.01em;
+  text-align: left;
 }
 
 .fun-copy p {
   margin: 0;
 }
 
-.fun-cluster-top,
-.fun-comics-end,
-.fun-print-cluster {
-  margin: 0 0 24px;
+.fun-letterpress-top,
+.fun-letterpress-middle,
+.fun-comics-top,
+.fun-comics-middle,
+.fun-comics-bottom {
+  width: min(100%, 980px);
+  margin: 0 auto 100px;
 }
 
-.fun-cluster-top img,
-.fun-comics-main img,
-.fun-comics-end img,
-.fun-print-cluster img {
+.fun-letterpress-top img,
+.fun-letterpress-middle img,
+.fun-comics-bottom img {
   width: 100%;
   height: auto;
   display: block;
@@ -853,68 +855,115 @@ a {
 
 .fun-letterpress-row {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 34px;
   align-items: start;
   width: 100%;
-  max-width: 560px;
-  margin: 0 auto;
+  max-width: 760px;
+  margin: 0 auto 100px;
 }
 
-.fun-letterpress-single {
+.fun-letterpress-copy {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.fun-letterpress-side {
   margin: 0;
 }
 
-.fun-letterpress-single img {
+.fun-letterpress-side img {
   width: 100%;
-  max-width: 150px;
+  max-width: 600px;
   height: auto;
   display: block;
 }
 
-.fun-comics-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 140px;
-  gap: 24px;
-  align-items: start;
-  margin-bottom: 24px;
+.fun-letterpress-bottom {
+  width: min(100%, 360px);
+  margin: 0 auto;
 }
 
-.fun-comics-main {
+.fun-letterpress-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fun-comics-top {
+  display: grid;
+  grid-template-columns: 0.58fr 0.42fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.fun-comics-video {
   margin: 0;
 }
 
-.fun-comics-copy {
+.fun-comics-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+.fun-comics-top-copy {
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 24ch;
+}
+
+.fun-comics-middle {
+  display: grid;
+  grid-template-columns: 0.34fr 0.32fr 0.34fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.fun-comics-left,
+.fun-comics-right {
+  margin: 0;
+}
+
+.fun-comics-left img,
+.fun-comics-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fun-comics-middle-copy {
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 20ch;
   padding-top: 2px;
 }
 
-.fun-print-bottom {
-  display: grid;
-  grid-template-columns: 220px 150px;
-  justify-content: start;
-  gap: 28px;
-  align-items: start;
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto;
+.fun-print-main {
+  width: min(100%, 1000px);
+  margin: 0 auto 12px;
 }
 
-.fun-tiger-video {
+.fun-print-main img {
   width: 100%;
   height: auto;
   display: block;
-  background: #000000;
 }
 
 .fun-print-copy {
-  padding-top: 2px;
+  width: min(100%, 180px);
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .fun-back {
   border: 0;
   background: transparent;
   padding: 10px;
-  margin: 0 auto;
+  margin: 80px auto 0;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -934,6 +983,53 @@ a {
 .fun-back:focus-visible .fun-back-diamond {
   opacity: 0.78;
   transform: rotate(45deg) scale(0.94);
+}
+
+@media (max-width: 768px) {
+  .fun-panel-inner {
+    max-width: 100%;
+    padding: 36px 16px 48px;
+  }
+
+  .fun-block {
+    margin-bottom: 64px;
+  }
+
+  .fun-letterpress-row,
+  .fun-comics-top,
+  .fun-comics-middle {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 100%;
+  }
+
+  .fun-letterpress-top,
+  .fun-letterpress-middle,
+  .fun-letterpress-bottom,
+  .fun-comics-top,
+  .fun-comics-middle,
+  .fun-comics-bottom,
+  .fun-print-main {
+    width: 100%;
+  }
+
+  .fun-letterpress-side img {
+    max-width: 110px;
+  }
+
+  .fun-comics-top-copy,
+  .fun-comics-middle-copy,
+  .fun-print-copy,
+  .fun-letterpress-copy {
+    max-width: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .fun-back-diamond {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 /* responsive */
@@ -1089,37 +1185,6 @@ a {
     height: 18px;
   }
 
- .fun-panel-inner {
-  max-width: 100%;
-  padding: 36px 16px 48px;
-}
-
-.fun-block {
-  margin-bottom: 64px;
-}
-
-.fun-letterpress-row,
-.fun-comics-row,
-.fun-print-bottom {
-  grid-template-columns: 1fr;
-  gap: 14px;
-  max-width: 100%;
-}
-
-.fun-letterpress-single img {
-  max-width: 110px;
-}
-
-.fun-comics-copy,
-.fun-print-copy {
-  padding-top: 0;
-}
-
-.fun-back-diamond {
-  width: 18px;
-  height: 18px;
-}
-
   .project-section {
     padding: 72px 20px 96px;
   }
@@ -1267,5 +1332,50 @@ a {
   .ocean-link {
     width: 100%;
     font-size: 12px;
+  }
+
+  .fun-panel-inner {
+    max-width: 100%;
+    padding: 36px 16px 48px;
+  }
+
+  .fun-block {
+    margin-bottom: 64px;
+  }
+
+  .fun-letterpress-row,
+  .fun-comics-top,
+  .fun-comics-middle {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 100%;
+  }
+
+  .fun-letterpress-top,
+  .fun-letterpress-middle,
+  .fun-letterpress-bottom,
+  .fun-comics-top,
+  .fun-comics-middle,
+  .fun-comics-bottom,
+  .fun-print-main {
+    width: 100%;
+  }
+
+  .fun-letterpress-side img {
+    max-width: 110px;
+  }
+
+  .fun-comics-top-copy,
+  .fun-comics-middle-copy,
+  .fun-print-copy,
+  .fun-letterpress-copy {
+    max-width: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .fun-back-diamond {
+    width: 18px;
+    height: 18px;
   }
 }
