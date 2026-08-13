@@ -435,7 +435,7 @@ body[data-landing-locked="true"] {
   font-size: var(--body-size);
   line-height: var(--body-line);
   letter-spacing: var(--body-space);
-  max-width: 62ch;
+  max-width: 120ch;
 }
 
 /* generic */
@@ -493,7 +493,7 @@ body[data-landing-locked="true"] {
 }
 
 .masses-text {
-  width: min(100%, var(--section-inner-narrow));
+  width: min(100%, var(--section-inner-wide));
   margin: 0 auto 96px;
 }
 
@@ -609,6 +609,37 @@ body[data-landing-locked="true"] {
   object-fit: cover;
 }
 
+.scraps-poem-lineone,
+.scraps-poem-linetwo {
+  margin: 50px 0 8px;
+  color: #1b48fc;
+  text-align: center;
+}
+
+.scraps-poem-translation-lineone,
+.scraps-poem-translation-linetwo {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.scraps-poet {
+  margin-top: 24px !important;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.scraps-installation-caption {
+  margin-top: 8px;
+  font-family: var(--body-font);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 2.4;
+  color: #555555;
+  text-align: left;
+}
+
+/* distilled */
 /* distilled */
 
 .distilled-section {
@@ -628,49 +659,58 @@ body[data-landing-locked="true"] {
 }
 
 .distilled-intro {
-  margin-bottom: 56px;
+  margin-bottom: 96px;
 }
 
 .distilled-item {
   display: grid;
-  grid-template-columns: 0.95fr 1.35fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 28px;
   align-items: start;
   margin-bottom: 46px;
 }
 
-.distilled-meta {
-  margin: 0 0 6px;
-  font-family: var(--body-font);
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1;
-}
-
-.distilled-visual h3 {
-  margin: 0 0 12px;
-  font-family: var(--title-font);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 11px;
-  line-height: 1.3;
-}
-
-.distilled-visual h3 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.distilled-visual h3 a:hover,
-.distilled-visual h3 a:focus-visible {
-  opacity: 0.55;
+.distilled-visual {
+  margin: 0;
 }
 
 .distilled-visual img {
   width: 100%;
+  display: block;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  display: block;
+}
+
+.distilled-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.distilled-title {
+  margin: 0 0 -20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+    line-height: 1.5;
+}
+
+.distilled-title a {
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.distilled-copy p {
+  margin: 0;
+  max-width: none;
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  max-height: fit-content;
+  
 }
 
 .distilled-logo {
@@ -683,6 +723,30 @@ body[data-landing-locked="true"] {
   height: auto;
   display: block;
 }
+
+@media (max-width: 768px) {
+  .distilled-intro {
+    margin-bottom: 32px;
+  }
+
+  .distilled-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 34px;
+  }
+
+  .distilled-title {
+    font-size: 14px;
+    margin-bottom: -20px;
+    line-height: 1.35;
+  }
+
+  .distilled-logo {
+    margin-top: 72px;
+    width: min(100%, 72px);
+  }
+}
+
 
 /* ocean */
 
@@ -719,7 +783,7 @@ body[data-landing-locked="true"] {
 }
 
 .ocean-main-image {
-  width: min(100%, var(--section-inner-wide));
+  width: min(35%, var(--section-inner-wide));
   margin-bottom: 42px;
 }
 
@@ -767,20 +831,32 @@ body[data-landing-locked="true"] {
 
 .ocean-link {
   margin: 0;
-  text-align: left;
+  text-align: center;
   width: min(100%, var(--section-inner-narrow));
   margin-left: auto;
   margin-right: auto;
   font-family: var(--body-font);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 0.6;
   letter-spacing: var(--body-space);
 }
 
 .ocean-link a:hover,
 .ocean-link a:focus-visible {
   opacity: 0.55;
+}
+
+.ocean-link a {
+  color: #ed1f75;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.ocean-link a:hover,
+.ocean-link a:focus-visible {
+  opacity: 0.75;
 }
 
 /* fun */
@@ -1394,4 +1470,8 @@ body[data-landing-locked="true"] {
     width: 18px;
     height: 18px;
   }
+}
+/* Pull Distilled description up so it starts closer to the image top */
+.distilled-copy p {
+  margin-top: 42px;
 }
