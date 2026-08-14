@@ -219,7 +219,7 @@ body[data-landing-locked="true"] {
 .about-image {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
 }
 
 .about-image img {
@@ -237,6 +237,7 @@ body[data-landing-locked="true"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .about-back-diamond {
@@ -1039,7 +1040,8 @@ body[data-landing-locked="true"] {
 
 .fun-print-copy {
   width: min(100%, 280px);
-  margin:  auto;
+  margin: 285px;
+  margin-top: 10%;
   font-size: 15px;
   line-height: 1.5;
   text-align: left;
@@ -1054,15 +1056,17 @@ body[data-landing-locked="true"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .fun-back-diamond {
   width: 22px;
   height: 22px;
-  background: #ffffff;
+  background: #151111;
   display: block;
   transform: rotate(45deg);
   transition: transform 180ms ease, opacity 180ms ease;
+  margin-top: -200px;
 }
 
 .fun-back:hover .fun-back-diamond,
