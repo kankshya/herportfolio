@@ -1119,6 +1119,7 @@ body[data-landing-locked="true"] {
   .fun-back-diamond {
     width: 18px;
     height: 18px;
+    margin-top: 10px;
   }
 }
 
