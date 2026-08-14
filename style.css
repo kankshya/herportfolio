@@ -1457,7 +1457,7 @@ body[data-landing-locked="true"] {
   .fun-print-copy,
   .fun-letterpress-copy {
     max-width: none;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5;
     margin: 5%;
   }
