@@ -13,7 +13,7 @@
   --body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --title-font: "Libertinus Math", system-ui;
 
-  --body-size: 13px;
+  --body-size: 15px;
   --body-line: 1.82;
   --body-space: 0.02em;
 
@@ -497,16 +497,9 @@ body[data-landing-locked="true"] {
   margin: 0 auto 96px;
 }
 
-.masses-secondary-image {
-  width: min(100%, 880px);
-  margin: 0 auto;
-}
 
-.masses-secondary-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
+
 
 /* scraps */
 
@@ -707,7 +700,7 @@ body[data-landing-locked="true"] {
   margin: 0;
   max-width: none;
   font-family: var(--body-font);
-  font-size: var(--body-size);
+  font-size: 13px;
   line-height: var(--body-line);
   max-height: fit-content;
   
@@ -908,7 +901,7 @@ body[data-landing-locked="true"] {
 }
 
 .fun-title {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2;
   margin-bottom: 18px;
 }
@@ -921,6 +914,7 @@ body[data-landing-locked="true"] {
   line-height: 1.35;
   letter-spacing: 0.01em;
   text-align: left;
+  
 }
 
 .fun-copy p {
@@ -955,7 +949,7 @@ body[data-landing-locked="true"] {
 }
 
 .fun-letterpress-copy {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -1000,9 +994,10 @@ body[data-landing-locked="true"] {
 }
 
 .fun-comics-top-copy {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
-  max-width: 24ch;
+  max-width: 53ch;
+  margin-left: 85px;
 }
 
 .fun-comics-middle {
@@ -1025,9 +1020,9 @@ body[data-landing-locked="true"] {
 }
 
 .fun-comics-middle-copy {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
-  max-width: 20ch;
+  max-width: 50ch;
   padding-top: 2px;
 }
 
@@ -1043,9 +1038,9 @@ body[data-landing-locked="true"] {
 }
 
 .fun-print-copy {
-  width: min(100%, 180px);
-  margin: 0 auto;
-  font-size: 12px;
+  width: min(100%, 280px);
+  margin:  auto;
+  font-size: 15px;
   line-height: 1.5;
   text-align: left;
 }
@@ -1113,7 +1108,7 @@ body[data-landing-locked="true"] {
   .fun-print-copy,
   .fun-letterpress-copy {
     max-width: none;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
   }
 
@@ -1416,9 +1411,9 @@ body[data-landing-locked="true"] {
   }
 
   .ocean-artwork img {
-    width: 92%;
+    width: 40%;
     max-width: 480px;
-    top: 54%;
+    top: 24%;
   }
 
   .ocean-link {
@@ -1454,7 +1449,7 @@ body[data-landing-locked="true"] {
   }
 
   .fun-letterpress-side img {
-    max-width: 110px;
+    max-width: 100%;
   }
 
   .fun-comics-top-copy,
@@ -1462,9 +1457,12 @@ body[data-landing-locked="true"] {
   .fun-print-copy,
   .fun-letterpress-copy {
     max-width: none;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 1.5;
+    margin: 5%;
   }
+
+  
 
   .fun-back-diamond {
     width: 18px;
