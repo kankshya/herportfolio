@@ -1483,3 +1483,18 @@ body[data-landing-locked="true"] {
 .distilled-copy p {
   margin-top: 42px;
 }
+
+/* Make EPW link in Distilled intro behave like a normal link */
+.distilled-intro a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  color: inherit; /* keeps your existing text colour */
+  cursor: pointer;
+}
+
+/* Hover/focus behaviour */
+.distilled-intro a:hover,
+.distilled-intro a:focus-visible {
+  opacity: 0.7;
+}
